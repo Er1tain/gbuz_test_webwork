@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    background-color: lime;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'default';
+    src: url('../assets/fonts/default.ttf');
+}
+
+* {
+    font-family: 'default';
+}
+

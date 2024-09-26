@@ -1,0 +1,30 @@
+.slider_content {
+    position: relative;
+}
+
+.slider_content .text_media {
+    position: absolute;
+
+    width: 700px;
+    height: 500px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+p {
+    white-space: nowrap;
+
+}
+
+.slider_content img, video {
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+}
+
