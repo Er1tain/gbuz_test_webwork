@@ -23,4 +23,10 @@ function RunSlide(elems) {
     }, 0);
 }
 
-const RunSlideAfterSettings = ()=>slides.forEach((slide, num)=>setTimeout(()=>RunSlide(slide), 900 * time * num));
+//const RunSlideAfterSettings = ()=>slides.forEach((slide, num)=>setTimeout(()=>RunSlide(slide), 900 * time * num));
+
+const RunSlideAfterSettings = ()=>{
+    slides.forEach((slide, num)=>setTimeout(()=>RunSlide(slide), 900 * time * num));
+    setInterval(
+        ()=>slides.forEach((slide, num)=>setTimeout(()=>RunSlide(slide), 900 * time * num)), 900 * time * slides.length - 1);
+}
