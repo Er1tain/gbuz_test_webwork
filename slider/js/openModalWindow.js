@@ -14,7 +14,7 @@ function closeModalWindow() {
     let time_settings = document.getElementById('time_settings');
     time_settings.style.display = 'none';
 
-    RunSlideAfterSettings();
+    if (time != -1) RunSlideAfterSettings();
 }
 
 function openModalWindow() {
